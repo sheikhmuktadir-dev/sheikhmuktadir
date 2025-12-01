@@ -6,9 +6,23 @@ import { SiGmail } from "react-icons/si";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { heroData } from "../../Data/Data";
 import heroImage from "/images/hero/hero.webp";
+import { useState } from "react";
 
 export default function Hero() {
   const { name, designation, greeting, image, socials = [] } = heroData || {};
+
+  const [pos, setPos] = useState({ x: 0, y: 0, rotate: 0 });
+
+  const handleMove = (e) => {
+    const x = (e.clientX / window.innerWidth - 0.5) * 100;
+    const y = (e.clientY / window.innerHeight - 0.5) * 100;
+
+    const rotate = (e.clientX / window.innerWidth - 0.5) * 10;
+
+    setPos({ x, y, rotate });
+  };
+
+  const reset = () => setPos({ x: 0, y: 0, rotate: 0 });
 
   const iconMap = {
     FaLinkedin: <FaLinkedin />,
@@ -17,13 +31,20 @@ export default function Hero() {
     IoLogoWhatsapp: <IoLogoWhatsapp />,
   };
   return (
-    <section className={Style.heroMain}>
+    <section
+      className={Style.heroMain}
+      onMouseMove={handleMove}
+      onMouseLeave={reset}
+    >
       <Container>
         <div className={Style.heroInner}>
           <div className={Style.heroMainFlex}>
             <img
               src={image || heroImage}
               alt={name || "Sheikh Muktadir"}
+              style={{
+                transform: `translate(${pos.x}px, ${pos.y}px) rotate(${pos.rotate}deg)`,
+              }}
               className={Style.heroMainImage}
             />
             <div className={Style.heroTextArea}>
