@@ -298,3 +298,9 @@
     transform: translateY(-60px);
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1599.98px) {
+  .heroMainFlex {
+    margin: 40px 0 0;
+  }
+}
