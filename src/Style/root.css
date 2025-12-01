@@ -1,0 +1,294 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --font-body: "Roboto", sans-serif;
+  --font-heading: "Antonio", sans-serif;
+
+  /* container */
+  --container-width: 1100px;
+  --container-space: clamp(16px, 3vw, 48px);
+
+  /* navbar */
+  --navbar-postion: fixed;
+  --navbar-padding: 0 10px 0 20px;
+  --navbar-radius: 100px;
+  --navbar-width: 550px;
+  --navbar-scroll-width: 250px;
+  --navbar-height: 60px;
+  --navbar-btn-padding: 10px 20px;
+  --navbar-btn-radius: 50px;
+
+  /* hero */
+  --hero-gap: 80px;
+  --hero-height: 100vh;
+  --hero-image-width: 330px;
+  --hero-image-height: 470px;
+  --hero-image-radius: 400px;
+  --hero-text-gap: 30px;
+
+  /* work */
+  --work-heading-height: 100vh;
+  --work-height-gap: 40px;
+  --work-cardarea-height: 100vh;
+  --work-cardarea-gap: 30rem;
+  --work-card-width: 550px;
+  --work-card-height: 450px;
+  --work-card-textgap: 40px;
+  --work-card-padding: 40px;
+
+  /* about */
+  --about-grid: repeat(2, 1fr);
+  --about-gap: 80px;
+  --about-para-gap: 40px;
+  --experience-card-grid: 1fr 2fr;
+  --experience-card-gap: 40px;
+  --experience-card-padding: 10px 20px;
+  --experience-card-height: 100px;
+
+  /* button */
+  --button-height: 50px;
+  --button-padding: 0 30px;
+  --button-radius: 100px;
+
+  /* font weight */
+  --font-weight-400: 400;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+  --font-weight-700: 700;
+  --font-weight-800: 800;
+  --font-weight-900: 900;
+
+  /* font size */
+  --normal-fontsize: 1rem;
+  --logo-fontsize: 1.25rem;
+  --icon-fontsize: 30px;
+  --h1-fontsize: 7.5rem;
+  --h2-fontsize: 5rem;
+  --h3-fontsize: 3.75rem;
+  --h4-fontsize: 2.5rem;
+  --h5-fontsize: 1.5rem;
+  --h6-fontsize: 1.25rem;
+
+  /* space */
+  --section-main-space: 100px 0;
+  --content-top-space: 50px 0 0;
+  --content-bottom-space: 0 0 50px;
+}
+
+:root[data-theme="light"] {
+  --bg-gif: none;
+  --body-gradient: linear-gradient(transparent, transparent);
+
+  /* background */
+  --bg-primary: #ffffff;
+  --bg-secondary: #fafafa;
+  --bg-muted: rgba(255, 255, 255, 0.5);
+  --bg-accent: rgb(18, 179, 63);
+  --bg-border: #828282;
+  --bg-extra: #0e0e0e;
+  --bg-extra-mute: rgba(22, 22, 22, 0.4);
+
+  /* color */
+  --text-primary: #0e0e0e;
+  --text-secondary: #ffffff;
+  --text-muted: #828282;
+
+  /* box shadow */
+  --box-shadow-main: rgba(0, 0, 0, 0.07) 0px 0.597144px 0.597144px -0.9375px,
+    rgba(0, 0, 0, 0.07) 0px 1.81088px 1.81088px -1.875px,
+    rgba(0, 0, 0, 0.06) 0px 4.78699px 4.78699px -2.8125px,
+    rgba(0, 0, 0, 0.03) 0px 15px 15px -3.75px;
+
+  /* border */
+  --border-primary: #dedede;
+}
+
+:root[data-theme="dark"] {
+  --bg-gif: url("/images/other/gif.gif");
+  --body-gradient: linear-gradient(
+    rgba(12, 12, 12, 0.92),
+    rgba(12, 12, 12, 0.92)
+  );
+
+  /* background */
+  --bg-primary: #0e0e0e;
+  --bg-secondary: #333333;
+  --bg-muted: #0f0f0fe6;
+  --bg-accent: rgb(18, 179, 63);
+  --bg-border: #d0ff71;
+  --bg-extra: #ffffff;
+  --bg-extra-mute: rgba(255, 255, 255, 0.5);
+
+  /* color */
+  --text-primary: #ffffff;
+  --text-secondary: #0e0e0e;
+  --text-muted: #d0ff71;
+
+  /* box shadow */
+  --box-shadow-main: 0 4px 20px rgba(0, 0, 0, 0.4),
+    0 12px 40px rgba(0, 0, 0, 0.3), 0 24px 80px rgba(0, 0, 0, 0.25);
+
+  /* border */
+  --border-primary: #5c5c5c;
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --container-width: 100%;
+
+    /* navbar */
+    --navbar-postion: fixed;
+    --navbar-padding: 0 15px;
+    --navbar-radius: 100px;
+    --navbar-width: 300px;
+    --navbar-scroll-width: 300px;
+
+    /* hero */
+    --hero-gap: 40px;
+    --hero-height: auto;
+    --hero-image-width: 300px;
+    --hero-image-height: 300px;
+    --hero-image-radius: 300px;
+    --hero-text-gap: 15px;
+
+    /* font size */
+    --normal-fontsize: 1rem;
+    --logo-fontsize: 1.4rem;
+    --icon-fontsize: 22px;
+    --h1-fontsize: 4rem;
+    --h2-fontsize: 3rem;
+    --h3-fontsize: 2.5rem;
+    --h4-fontsize: 1.8rem;
+    --h5-fontsize: 1.2rem;
+    --h6-fontsize: 1rem;
+
+    /* space */
+    --section-main-space: 50px 0;
+    --content-top-space: 30px 0 0;
+    --content-bottom-space: 0 0 30px;
+
+    /* work */
+    --work-heading-height: auto;
+    --work-height-gap: 20px;
+    --work-cardarea-height: auto;
+    --work-cardarea-gap: 2rem;
+    --work-card-width: 100%;
+    --work-card-height: 300px;
+    --work-card-textgap: 40px;
+    --work-card-padding: 40px;
+
+    /* about */
+    --about-grid: 1fr;
+    --about-gap: 40px;
+    --about-para-gap: 40px;
+    --experience-card-grid: 1fr 2fr;
+    --experience-card-gap: 40px;
+    --experience-card-padding: 10px 20px;
+    --experience-card-height: 100px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  :root {
+    --container-width: 100%;
+
+    /* navbar */
+    --navbar-postion: fixed;
+    --navbar-padding: 0 15px;
+    --navbar-radius: 100px;
+    --navbar-width: 500px;
+    --navbar-scroll-width: 500px;
+
+    /* hero */
+    --hero-gap: 40px;
+    --hero-text-gap: 15px;
+
+    /* font size */
+    --normal-fontsize: 1rem;
+    --logo-fontsize: 1.5rem;
+    --icon-fontsize: 22px;
+    --h1-fontsize: 4.5rem;
+    --h2-fontsize: 3.5rem;
+    --h3-fontsize: 3rem;
+    --h4-fontsize: 2.2rem;
+    --h5-fontsize: 1.5rem;
+    --h6-fontsize: 1rem;
+
+    /* space */
+    --section-main-space: 80px 0;
+    --content-top-space: 40px 0 0;
+    --content-bottom-space: 0 0 40px;
+
+    /* work */
+    --work-heading-height: auto;
+    --work-height-gap: 20px;
+    --work-cardarea-height: auto;
+    --work-cardarea-gap: 5rem;
+    --work-card-width: 450px;
+    --work-card-height: 350px;
+    --work-card-textgap: 40px;
+    --work-card-padding: 40px;
+
+    /* about */
+    --about-gap: 40px;
+    --about-para-gap: 40px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1279.98px) {
+  :root {
+    --container-width: 980px;
+
+    /* hero */
+    --hero-gap: 60px;
+    --hero-image-width: 280px;
+    --hero-image-height: 400px;
+
+    /* work */
+    --work-cardarea-gap: 20rem;
+    --work-card-width: 500px;
+    --work-card-height: 400px;
+    --work-card-textgap: 40px;
+    --work-card-padding: 40px;
+
+    /* about */
+    --about-gap: 60px;
+    --about-para-gap: 40px;
+
+    /* font size */
+    --normal-fontsize: 1rem;
+    --logo-fontsize: 1.25rem;
+    --icon-fontsize: 30px;
+    --h1-fontsize: 6.5rem;
+    --h2-fontsize: 4rem;
+    --h3-fontsize: 3.5rem;
+    --h4-fontsize: 2rem;
+    --h5-fontsize: 1.5rem;
+    --h6-fontsize: 1.25rem;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1599.98px) {
+  :root {
+    --container-width: 1080px;
+
+    /* hero */
+    --hero-image-width: 310px;
+    --hero-image-height: 450px;
+
+    /* work */
+    --work-card-width: 520px;
+    --work-card-height: 420px;
+  }
+}
+
+@media (min-width: 2560px) {
+  :root {
+    /* hero */
+    --hero-height: 80vh;
+
+    /* work */
+    --work-heading-height: 80vh;
+    --work-cardarea-height: 80vh;
+  }
+}

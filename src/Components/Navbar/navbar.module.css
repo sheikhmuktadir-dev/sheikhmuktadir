@@ -1,0 +1,171 @@
+.navbarMain {
+  position: var(--navbar-postion);
+  top: 30px;
+  margin: 0;
+  padding: var(--navbar-padding);
+  line-height: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: var(--navbar-radius);
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--border-primary);
+  max-width: var(--navbar-width);
+  width: 100%;
+  height: var(--navbar-height);
+  background: var(--bg-muted);
+  backdrop-filter: blur(10px);
+  z-index: 99999;
+  transition: all 0.3s ease;
+}
+
+.navLogoArea {
+  position: relative;
+}
+
+.navbarMainScroll {
+  max-width: var(--navbar-scroll-width);
+  justify-content: center;
+  transition: max-width 0.3s ease;
+}
+
+.navLogo {
+  position: relative;
+  font-size: var(--logo-fontsize);
+  white-space: nowrap;
+  color: var(--text-primary);
+  font-weight: var(--font-weight-500);
+}
+
+.navLogo::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: var(--bg-accent);
+  position: absolute;
+  border-radius: 20px;
+  right: -20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.navbarList {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+  opacity: 1;
+  max-width: 100%;
+  transition: opacity 0.3s ease, max-width 0.3s ease;
+  justify-content: end;
+}
+
+.navbarMainScroll .navbarList {
+  opacity: 0;
+  max-width: 0;
+}
+
+.navbarItem {
+  position: relative;
+}
+
+.navbarLink {
+  position: relative;
+  white-space: nowrap;
+  color: var(--text-primary);
+  font-weight: var(--font-weight-400);
+}
+
+.navCv {
+  position: relative;
+  box-shadow: var(--box-shadow-main);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--navbar-btn-radius);
+  font-weight: var(--font-weight-400);
+  white-space: nowrap;
+  flex: none;
+  color: var(--text-primary);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: var(--navbar-btn-padding);
+}
+
+.navToggle,
+.navCloseToggle {
+  display: none;
+}
+
+@media (max-width: 1023.98px) {
+  .navbarList {
+    position: fixed;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    margin-top: -20px;
+    border-radius: 0 0 40px 40px;
+    background: var(--bg-border);
+    z-index: 999999;
+    transition: all 0.3s ease;
+    box-shadow: var(--box-shadow-main);
+    transform: translateY(-150%);
+  }
+
+  .navbarListShow {
+    transform: translateY(0);
+  }
+
+  .navLogoArea {
+    position: relative;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navToggle {
+    display: inline-flex;
+    background: transparent;
+    color: var(--text-primary);
+    font-size: var(--h4-fontsize);
+  }
+
+  .navCloseToggle {
+    position: absolute;
+    top: 20px;
+    display: block;
+    font-size: var(--h4-fontsize);
+    background: transparent;
+    right: 20px;
+    color: #0e0e0e;
+  }
+
+  .navbarMain {
+    top: 20px;
+  }
+
+  .navbarMainScroll .navbarList {
+    opacity: 1;
+    max-width: 100%;
+  }
+
+  .navCv,
+  .navbarLink {
+    font-size: var(--h5-fontsize);
+  }
+
+  .navbarLink {
+    color: #0e0e0e;
+  }
+
+  .navLogo::after {
+    right: -15px;
+  }
+}

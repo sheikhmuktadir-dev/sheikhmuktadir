@@ -1,0 +1,59 @@
+.footerMain {
+  position: relative;
+  max-width: 100%;
+  background: var(--bg-border);
+  width: 100%;
+}
+
+.footerInner {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+  padding: var(--section-main-space);
+}
+
+.footerBox {
+  position: relative;
+  box-shadow: var(--box-shadow-main);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-primary);
+  border-radius: var(--button-radius);
+  font-weight: var(--font-weight-400);
+  white-space: nowrap;
+  flex: none;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 10;
+  gap: 10px;
+  line-height: 1;
+  height: var(--button-height);
+  font-size: var(--h6-fontsize);
+  padding: var(--button-padding);
+}
+
+.footerBgText {
+  font-size: var(--verylarge-fontsize);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: var(--verylarge-fontsize);
+  overflow: hidden;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.2;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.footerText {
+  z-index: 10;
+  color: #0e0e0e;
+}

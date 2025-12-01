@@ -1,0 +1,9 @@
+.container {
+  max-width: var(--container-width);
+  width: 100%;
+  margin: 0 auto;
+  padding-left: var(--container-space);
+  border-left: 1px solid var(--border-primary);
+  border-right: 1px solid var(--border-primary);
+  padding-right: var(--container-space);
+}

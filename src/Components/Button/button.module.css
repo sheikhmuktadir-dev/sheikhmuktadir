@@ -1,0 +1,39 @@
+.buttonFull {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  line-height: 1;
+  flex: none;
+  font-size: var(--h6-fontsize);
+  border-radius: var(--button-radius);
+  height: var(--button-height);
+  border: none;
+  white-space: nowrap;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-weight: var(--font-weight-400);
+  padding: var(--button-padding);
+}
+
+.buttonDark {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  line-height: 1;
+  font-size: var(--h6-fontsize);
+  font-weight: var(--font-weight-400);
+  flex: none;
+  border-radius: var(--button-radius);
+  white-space: nowrap;
+  height: var(--button-height);
+  border: none;
+  background: var(--bg-extra);
+  color: var(--text-secondary);
+  padding: var(--button-padding);
+}

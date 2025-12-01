@@ -1,0 +1,70 @@
+.workCard {
+  position: relative;
+  height: var(--work-card-height);
+  width: 100%;
+  overflow: hidden;
+  border-radius: 40px;
+  max-width: var(--work-card-width);
+}
+
+.workCard:nth-child(even) {
+  align-self: flex-end;
+}
+
+.workCardImage {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.workCardText {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px 40px 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: var(--work-card-textgap);
+  opacity: 0;
+  transform: translateY(-50%) scale(1);
+  backdrop-filter: blur(20px);
+  background: var(--bg-extra-mute);
+  z-index: 20;
+  padding: var(--work-card-padding);
+  transition: all 0.3s ease;
+}
+
+.workCardHeading {
+  color: var(--text-secondary);
+}
+
+.workCard:hover .workCardText {
+  transform: translateY(0) scale(1);
+  border-radius: 40px;
+  opacity: 1;
+}
+
+.workCardButtonFlex {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 767.98px) {
+  .workCardButtonFlex {
+    flex-direction: column;
+  }
+
+  .workCard:nth-child(even) {
+    align-self: flex-start;
+  }
+}

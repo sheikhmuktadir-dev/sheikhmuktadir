@@ -1,0 +1,207 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  font-size: var(--normal-fontsize);
+  font-weight: var(--font-weight-400);
+  line-height: 1.6;
+  color: var(--text-primary);
+  background: var(--body-gradient), var(--bg-gif), var(--bg-primary);
+  background-repeat: repeat;
+  background-position: left top;
+  background-attachment: fixed;
+  background-size: 250px auto;
+  overflow-wrap: break-word;
+}
+
+/* For the entire page */
+::-webkit-scrollbar {
+  width: 4px;
+  background: transparent;
+}
+
+/* Track (background) */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 10px;
+}
+
+/* Handle (thumb) */
+::-webkit-scrollbar-thumb {
+  background: var(--bg-border);
+  border-radius: 10px;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+main {
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: var(--h1-fontsize);
+  font-weight: var(--font-weight-700);
+  line-height: 1em;
+  font-family: var(--font-heading);
+}
+
+h2 {
+  font-size: var(--h2-fontsize);
+  font-weight: var(--font-weight-700);
+  line-height: 1em;
+  font-family: var(--font-heading);
+}
+
+h3 {
+  font-size: var(--h3-fontsize);
+  font-weight: var(--font-weight-700);
+  line-height: 1.2em;
+  font-family: var(--font-heading);
+}
+
+h4 {
+  font-size: var(--h4-fontsize);
+  font-weight: var(--font-weight-700);
+  line-height: 1.3em;
+  font-family: var(--font-heading);
+}
+
+h5 {
+  font-size: var(--h5-fontsize);
+  font-weight: var(--font-weight-400);
+  line-height: 1.4em;
+  font-family: var(---font-heading);
+}
+
+h6 {
+  font-size: var(--h6-fontsize);
+  font-weight: var(--font-weight-400);
+  line-height: 1.4em;
+  font-family: var(---font-heading);
+}
+
+/* wrapper */
+.switch {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-block;
+  width: 50px;
+  z-index: 99999999;
+  height: 25px;
+}
+
+/* hide checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* slider background */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #d0ff71;
+  transition: 0.3s;
+  border-radius: 34px;
+}
+
+/* knob */
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 19px;
+  width: 19px;
+  left: 3px;
+  bottom: 3px;
+  background-color: #0e0e0e;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+/* when checked */
+.switch input:checked + .slider {
+  background-color: #828282;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(25px);
+}
+
+@media (max-width: 767.98px) {
+  .switch {
+    bottom: 20px;
+  }
+}
