@@ -136,7 +136,7 @@ export const workData = [
   {
     id: 3,
     title: "Archi Architecture & Interior Design",
-    image: "/images/work/w4.webp",
+    image: "/images/work/w3.webp",
     liveLink: "https://archi-phi.vercel.app/",
     sourceLink: "https://github.com/sheikhmuktadir-dev/archi",
   },
