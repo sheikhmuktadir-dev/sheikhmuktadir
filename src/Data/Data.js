@@ -23,7 +23,7 @@ export const navLinks = [
 // footer
 export const footerData = {
   cta: {
-    heading: "Let’s build better—together.",
+    heading: "Let’s build something amazing together",
     whatsapp: {
       number: "971505257130",
       url: "https://wa.me/971505257130",
@@ -163,6 +163,7 @@ export const experienceData = [
 
 // about
 export const aboutParagraphs = [
-  "I am a B.Tech CSE graduate with 2+ years of UI & Frontend experience, building dashboards, landing pages, and responsive interfaces using HTML, CSS, JavaScript, Tailwind, and Bootstrap. I am also a self-taught React.js developer with project-based experience in Hooks, Context, Router, Framer Motion, and API integration, capable of delivering production-ready React apps without formal company experience in React.",
-  "Currently in Abu Dhabi (visit visa) and immediately available for Frontend, React, or UI Developer roles in Dubai or Abu Dhabi.",
+  "I’m Sheikh Muktadir – a B.Tech CSE graduate and passionate UI + Frontend Developer with 2+ years of solid commercial experience. I specialize in crafting luxury-grade, pixel-perfect, and fully responsive interfaces using modern HTML, CSS, JavaScript, Tailwind CSS, and Bootstrap. From complex dashboards to high-converting landing pages – I make everything look flawless on every device.",
+  "Self-taught and production-ready in React.js, I master Hooks, Context API, React Router, Framer Motion animations, and REST API integration. Every project you see here is 100% built and deployed by me – clean, fast, and ready for real-world use.",
+  "Currently in Abu Dhabi on a visit visa - available to join immediately in Dubai, Abu Dhabi, or Sharjah. Looking for the right team where I can deliver beautiful, high-performance web experiences every single day.",
 ];

@@ -39,7 +39,7 @@
   /* about */
   --about-grid: repeat(2, 1fr);
   --about-gap: 80px;
-  --about-para-gap: 40px;
+  --about-para-gap: 20px;
   --experience-card-grid: 1fr 2fr;
   --experience-card-gap: 40px;
   --experience-card-padding: 10px 20px;
@@ -180,9 +180,6 @@
     /* about */
     --about-grid: 1fr;
     --about-gap: 40px;
-    --about-para-gap: 40px;
-    --experience-card-grid: 1fr 2fr;
-    --experience-card-gap: 40px;
     --experience-card-padding: 10px 20px;
     --experience-card-height: 100px;
   }
