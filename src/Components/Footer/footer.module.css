@@ -55,5 +55,5 @@
 
 .footerText {
   z-index: 10;
-  color: #0e0e0e;
+  color: var(--text-secondary);
 }

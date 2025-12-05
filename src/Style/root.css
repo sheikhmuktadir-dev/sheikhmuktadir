@@ -84,14 +84,14 @@
   --bg-secondary: #fafafa;
   --bg-muted: rgba(255, 255, 255, 0.5);
   --bg-accent: rgb(18, 179, 63);
-  --bg-border: #828282;
+  --bg-border: #5e67e6;
   --bg-extra: #0e0e0e;
   --bg-extra-mute: rgba(22, 22, 22, 0.4);
 
   /* color */
   --text-primary: #0e0e0e;
   --text-secondary: #ffffff;
-  --text-muted: #828282;
+  --text-muted: #5e67e6;
 
   /* box shadow */
   --box-shadow-main: rgba(0, 0, 0, 0.07) 0px 0.597144px 0.597144px -0.9375px,
