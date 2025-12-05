@@ -165,5 +165,5 @@ export const experienceData = [
 export const aboutParagraphs = [
   "I’m Sheikh Muktadir – a B.Tech CSE graduate and passionate UI + Frontend Developer with 2+ years of solid commercial experience. I specialize in crafting luxury-grade, pixel-perfect, and fully responsive interfaces using modern HTML, CSS, JavaScript, Tailwind CSS, and Bootstrap. From complex dashboards to high-converting landing pages – I make everything look flawless on every device.",
   "Self-taught and production-ready in React.js, I master Hooks, Context API, React Router, Framer Motion animations, and REST API integration. Every project you see here is 100% built and deployed by me – clean, fast, and ready for real-world use.",
-  "Currently in Abu Dhabi on a visit visa - available to join immediately in Dubai, Abu Dhabi, or Sharjah. Looking for the right team where I can deliver beautiful, high-performance web experiences every single day.",
+  "Currently in Dubai on a visit visa - available to join immediately in Dubai, Abu Dhabi, or Sharjah. Looking for the right team where I can deliver beautiful, high-performance web experiences every single day.",
 ];
