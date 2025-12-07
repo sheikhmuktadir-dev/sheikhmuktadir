@@ -23,7 +23,7 @@ export const navLinks = [
 // footer
 export const footerData = {
   cta: {
-    heading: "Let’s build something amazing together",
+    heading: "In Dubai right now – let’s connect on WhatsApp",
     whatsapp: {
       number: "971505257130",
       url: "https://wa.me/971505257130",
@@ -163,7 +163,11 @@ export const experienceData = [
 
 // about
 export const aboutParagraphs = [
-  "I’m Sheikh Muktadir – a B.Tech CSE graduate and passionate UI + Frontend Developer with 2+ years of solid commercial experience. I specialize in crafting luxury-grade, pixel-perfect, and fully responsive interfaces using modern HTML, CSS, JavaScript, Tailwind CSS, and Bootstrap. From complex dashboards to high-converting landing pages – I make everything look flawless on every device.",
-  "Self-taught and production-ready in React.js, I master Hooks, Context API, React Router, Framer Motion animations, and REST API integration. Every project you see here is 100% built and deployed by me – clean, fast, and ready for real-world use.",
-  "Currently in Dubai on a visit visa - looking for Junior / Mid-level Frontend or react roles across the entire UAE. Looking for the right team where I can deliver beautiful, high-performance web experiences every single day.",
+  "I'm Sheikh Muktadir – a pixel-perfect Frontend Developer with 2+ years commercial experience building high-performance SaaS dashboards and travel platforms using Tailwind CSS, Bootstrap 5 & JavaScript (95–100 Lighthouse).",
+
+  "Self-taught React.js to production level → built and deployed two luxury real-estate projects (Auria & Almaas) directly inspired by Bayut, Property Finder, Emaar & Sobha Realty – fully responsive, Framer Motion animations, Context API, React Router, live on Vercel.",
+
+  "Currently in Dubai on visit visa – available to join immediately (onsite or hybrid). Ready for Junior / Mid-Level Frontend or React roles across the UAE.",
+
+  "Let’s build something beautiful and lightning-fast together.",
 ];
