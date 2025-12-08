@@ -37,7 +37,7 @@ export const footerData = {
 // hero
 export const heroData = {
   name: "Sheikh Muktadir",
-  designation: "Frontend & UI Developer",
+  designation: "Frontend Developer",
   greeting: "Hello, I'm",
   image: "/images/hero/hero.webp",
   socials: [
@@ -163,11 +163,15 @@ export const experienceData = [
 
 // about
 export const aboutParagraphs = [
-  "I'm Sheikh Muktadir – a pixel-perfect Frontend Developer with 2+ years commercial experience building high-performance SaaS dashboards and travel platforms using Tailwind CSS, Bootstrap 5 & JavaScript (95–100 Lighthouse).",
+  "I'm Sheikh Muktadir – a pixel-perfect Frontend Developer with 2.2+ years of commercial experience in product-based companies (travel booking & cloud SaaS).",
 
-  "Self-taught React.js to production level → built and deployed two luxury real-estate projects (Auria & Almaas) directly inspired by Bayut, Property Finder, Emaar & Sobha Realty – fully responsive, Framer Motion animations, Context API, React Router, live on Vercel.",
+  "Hands-on React.js experience from working with the team on EarnOn – a social + rewards platform currently under active development – using React, Tailwind CSS, Context API, custom hooks, and JavaScript.",
 
-  "Currently in Dubai on visit visa – available to join immediately (onsite or hybrid). Ready for Junior / Mid-Level Frontend or React roles across the UAE.",
+  "Built 30+ reusable React components and consistently delivered 95–100 Lighthouse scores using code-splitting, lazy loading, image optimization & critical CSS.",
 
-  "Let’s build something beautiful and lightning-fast together.",
+  "Independently built and deployed two luxury real-estate portals (Almac & Auria) inspired by Bayut, Emaar & Sobha – fully responsive with Framer Motion animations, and advanced filters – live on Vercel.",
+
+  "Currently in Dubai on visit visa – available to join immediately (onsite or hybrid, anywhere in UAE).",
+
+  "Open to Junior / Mid-Level Frontend or React roles. Let’s build something beautiful and lightning-fast together.",
 ];
