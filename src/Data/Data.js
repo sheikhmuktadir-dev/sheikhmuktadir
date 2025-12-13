@@ -121,20 +121,27 @@ export const skillsData = [
 export const workData = [
   {
     id: 1,
+    title: "Pulse Gym",
+    image: "/images/work/w4.webp",
+    liveLink: "https://pulsegym-seven.vercel.app/",
+    sourceLink: "https://github.com/sheikhmuktadir-dev/pulsegym",
+  },
+  {
+    id: 2,
     title: "Almac Real Estate",
     image: "/images/work/w2.webp",
     liveLink: "https://almac.vercel.app/",
     sourceLink: "https://github.com/sheikhmuktadir-dev/almac",
   },
   {
-    id: 2,
+    id: 3,
     title: "Auria Find Your Home",
     image: "/images/work/w1.webp",
     liveLink: "https://auria-luxury-dubai.vercel.app/",
     sourceLink: "https://github.com/sheikhmuktadir-dev/auria-luxury-dubai",
   },
   {
-    id: 3,
+    id: 4,
     title: "Archi Architecture & Interior Design",
     image: "/images/work/w3.webp",
     liveLink: "https://archi-phi.vercel.app/",
