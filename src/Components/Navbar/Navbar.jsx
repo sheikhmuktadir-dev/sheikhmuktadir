@@ -39,7 +39,11 @@ export default function Navbar() {
         <Link to="/" className={Style.navLogo}>
           Sheikh Muktadir
         </Link>
-        <button className={Style.navToggle} onClick={() => setMenuOpen(true)}>
+        <button
+          type="button"
+          className={Style.navToggle}
+          onClick={() => setMenuOpen(true)}
+        >
           <TbMenu />
         </button>
       </div>
@@ -50,6 +54,7 @@ export default function Navbar() {
         }`}
       >
         <button
+          type="button"
           className={Style.navCloseToggle}
           onClick={() => setMenuOpen(false)}
         >
