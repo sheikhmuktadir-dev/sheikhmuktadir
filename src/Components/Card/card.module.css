@@ -34,20 +34,14 @@
   text-align: center;
   gap: var(--work-card-textgap);
   opacity: 0;
-  transform: translateY(-50%) scale(1);
-  backdrop-filter: blur(20px);
-  background: var(--bg-extra-mute);
+  transform: scale(0);
   z-index: 20;
   padding: var(--work-card-padding);
   transition: all 0.3s ease;
 }
 
-.workCardHeading {
-  color: var(--text-secondary);
-}
-
 .workCard:hover .workCardText {
-  transform: translateY(0) scale(1);
+  transform: scale(1);
   border-radius: 40px;
   opacity: 1;
 }

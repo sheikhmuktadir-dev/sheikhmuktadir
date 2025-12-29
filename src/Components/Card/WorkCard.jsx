@@ -14,7 +14,6 @@ export default function WorkCard({ data }) {
           className={Style.workCardImage}
         />
         <div className={Style.workCardText}>
-          <h4 className={Style.workCardHeading}>{data?.title || "No Title"}</h4>
           <div className={Style.workCardButtonFlex}>
             <ButtonFull url={data?.liveLink}>
               <RiLiveFill />
